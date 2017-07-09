@@ -1,7 +1,6 @@
-" ******************************************************************************
 " This file contians all the settings relative to airline
 " Airline is a plugin that will show a better UI interface for the status line
-" ******************************************************************************
+
 " This show airline in normal vim window
 set laststatus=2
 
@@ -17,24 +16,14 @@ let g:airline#extension#tabline#fnamemod = ':t'
 " This enables powerline fonts for airline
 let g:airline_powerline_fonts = 1
 
-" This allows buffers to be hidden if you've modified a buffer.
-" This is almost a must if you wish to use buffers in this way.
-set hidden
+" This is to enable the fugitive on the status line
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
-" To open a new empty buffer
-" This replaces :tabnew which I used to bind to this mapping
-nmap <leader>nw :enew<cr>
-
-" Move to the next buffer
-nmap <leader>K :bnext<CR>
-
-" Move to the previous buffer
-nmap <leader>J :bprevious<CR>
-
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
-nmap <leader>x :bp <BAR> bd #<CR>
-
-" Show all open buffers and their status
-nmap <leader>l :ls<CR>
-" ******************************************************************************
+" This is for the syntastic functionality
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
