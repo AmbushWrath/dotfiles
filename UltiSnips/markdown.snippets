@@ -1,0 +1,12 @@
+snippet back "Link to the content page!"
+
+[Back][0]
+
+---
+
+endsnippet
+
+snippet index "This will create an index element"
+[$1]( #${1/\s/_/g} )
+## <a id="${1/\s/_/g}"></a>$1
+endsnippet
