@@ -45,3 +45,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 " colorscheme molokai
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
+
+" This will highlight the current line
+set cursorline
+
+" For mouse luxury
+set mouse=a
