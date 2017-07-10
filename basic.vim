@@ -51,3 +51,10 @@ set cursorline
 
 " For mouse luxury
 set mouse=a
+
+" This is for comments in Ubuntu 14.04
+hi Comment ctermfg=14 ctermbg=233 cterm=NONE
+
+" This is for ease of command typing
+nnoremap : ;
+nnoremap ; :
