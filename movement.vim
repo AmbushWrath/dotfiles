@@ -23,3 +23,15 @@ nmap <c-t> <c-w>T
 
 " This will lists all tabs
 nmap <leader>L :tabs<CR>
+
+" For easy window resize
+nnoremap <left> <c-w><
+nnoremap <right> <c-w>>
+nnoremap <up> <c-w>+
+nnoremap <down> <c-w>-
+
+" Resize windows
+nnoremap <c-right> <c-w>=
+
+" Make the present window vertically hightest
+nnoremap <c-left> <c-w>_

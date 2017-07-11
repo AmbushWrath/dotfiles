@@ -7,10 +7,10 @@ set hidden
 nmap <leader>nw :enew<cr>
 
 " Move to the next buffer
-nmap <leader>K :bnext<CR>
+nmap <leader>k :bnext<CR>
 
 " Move to the previous buffer
-nmap <leader>J :bprevious<CR>
+nmap <leader>j :bprevious<CR>
 
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab

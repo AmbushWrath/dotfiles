@@ -51,3 +51,11 @@ set cursorline
 
 " For mouse luxury
 set mouse=a
+
+" This is simple nnoremap
+nnoremap : ;
+nnoremap ; :
+
+" Save file and exit
+nnoremap <c-up> ddp
+nnoremap <c-down> dd<s-p>
