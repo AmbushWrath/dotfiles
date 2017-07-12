@@ -47,7 +47,7 @@ let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 
 " This will highlight the current line
-set cursorline
+nnoremap <leader>c :set cursorline!<cr>
 
 " For mouse luxury
 set mouse=a
@@ -55,7 +55,9 @@ set mouse=a
 " This is simple nnoremap
 nnoremap : ;
 nnoremap ; :
+vnoremap : ;
+vnoremap ; :
 
-" Save file and exit
-nnoremap <c-up> ddp
-nnoremap <c-down> dd<s-p>
+" This is to move lines up and down visually
+nnoremap <s-down> ddp
+nnoremap <s-up> ddk<s-p>
