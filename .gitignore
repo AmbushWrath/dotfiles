@@ -1,4 +1,4 @@
 .config
 .my-credentials
 /**/*.swp
-
+/**/tags

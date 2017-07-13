@@ -19,19 +19,13 @@ nnoremap <leader>s :sp<CR>
 nnoremap <leader>x :close<CR>
 
 " This is to open the current buffer in new tab
-nmap <c-t> <c-w>T
+nnoremap <c-t> <c-w>T
 
 " This will lists all tabs
-nmap <leader>L :tabs<CR>
+nnoremap <leader>L :tabs<CR>
 
 " For easy window resize
 nnoremap <left> <c-w><
 nnoremap <right> <c-w>>
 nnoremap <up> <c-w>+
 nnoremap <down> <c-w>-
-
-" Resize windows
-nnoremap <c-right> <c-w>=
-
-" Make the present window vertically hightest
-nnoremap <c-left> <c-w>_
