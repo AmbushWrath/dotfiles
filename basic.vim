@@ -61,3 +61,6 @@ vnoremap ; :
 " This is to move lines up and down visually
 nnoremap <s-down> ddp
 nnoremap <s-up> ddk<s-p>
+
+" This is for underline instead of highlights
+:highlight Search ctermbg=black ctermfg=yellow cterm=underline
