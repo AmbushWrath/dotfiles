@@ -13,7 +13,9 @@ nmap <s-right> ;diffput;diffupdate
 vmap <s-right> ;diffput;diffupdate
 
 " This is for diffget
-nmap <c-right> ;Gwrite
+nmap <c-left> ;diffget //2;diffupdate
+vmap <c-left> ;diffget //2;diffupdate
 
 " This is for diffput
-nmap <c-left> ;Gread
+nmap <c-right> ;diffput //3;diffupdate
+vmap <c-right> ;diffput //3;diffupdate

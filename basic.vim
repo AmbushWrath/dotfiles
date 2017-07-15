@@ -27,13 +27,15 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+autocmd Filetype css setlocal noexpandtab
+autocmd Filetype python setlocal sts=2 ts=2 sw=2 expandtab
 
 " This is for trailing spaces
 set list
 set listchars=tab:▸\ ,trail:-
 
 " This is for the colorscheme
-colorscheme spacegray
+" colorscheme spacegray
 
 " This opens the Gdiff window vertically
 set diffopt+=vertical
