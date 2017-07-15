@@ -27,13 +27,15 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+autocmd Filetype css setlocal noexpandtab
+autocmd Filetype python setlocal sts=2 ts=2 sw=2 expandtab
 
 " This is for trailing spaces
 set list
 set listchars=tab:▸\ ,trail:-
 
 " This is for the colorscheme
-colorscheme spacegray
+" colorscheme spacegray
 
 " This opens the Gdiff window vertically
 set diffopt+=vertical
@@ -41,20 +43,26 @@ set diffopt+=vertical
 " This is for better color scheme and indentation
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
-" colorscheme solarized8_dark
+colorscheme solarized8_dark
 " colorscheme molokai
-let g:spacegray_underline_search = 1
-let g:spacegray_italicize_comments = 1
+" let g:spacegray_underline_search = 1
+" let g:spacegray_italicize_comments = 1
 
 " This will highlight the current line
-set cursorline
+nnoremap <leader>c :set cursorline!<cr>
 
 " For mouse luxury
 set mouse=a
 
-" This is for comments in Ubuntu 14.04
-hi Comment ctermfg=14 ctermbg=233 cterm=NONE
-
-" This is for ease of command typing
+" This is simple nnoremap
 nnoremap : ;
 nnoremap ; :
+vnoremap : ;
+vnoremap ; :
+
+" This is to move lines up and down visually
+nnoremap <s-down> ddp
+nnoremap <s-up> ddk<s-p>
+
+" This is for underline instead of highlights
+:highlight Search ctermbg=black ctermfg=yellow cterm=underline
