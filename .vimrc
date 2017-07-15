@@ -56,6 +56,12 @@ Plugin 'taglist.vim'
 " For svg
 Plugin 'svg.vim'
 
+" For better star search
+Plugin 'nelstrom/vim-visual-star-search'
+
+" For easy git browsing
+Plugin 'tpope/vim-unimpaired'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -72,11 +78,12 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " All the other customization are in vim folder
-source ~/vim/basic.vim
-source ~/vim/movement.vim
 source ~/vim/bufferment.vim
 source ~/vim/macros.vim
 source ~/vim/routing.vim
 source ~/vim/airline.vim
 source ~/vim/functions.vim
 source ~/vim/UltiSnips.vim
+source ~/vim/fugitive.vim
+source ~/vim/basic.vim
+source ~/vim/movement.vim
