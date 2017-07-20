@@ -41,12 +41,13 @@ set listchars=tab:▸\ ,trail:-
 set diffopt+=vertical
 
 " This is for better color scheme and indentation
+set termguicolors
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
-colorscheme solarized8_dark
-" colorscheme molokai
-" let g:spacegray_underline_search = 1
-" let g:spacegray_italicize_comments = 1
+colorscheme neodark
+let g:neodark#solid_vertsplit = 1
+let g:neodark#terminal_transparent = 1
+let g:neodark#use_custom_terminal_theme = 1
 
 " This will highlight the current line
 nnoremap <leader>c :set cursorline!<cr>

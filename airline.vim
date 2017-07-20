@@ -4,9 +4,6 @@
 " This show airline in normal vim window
 set laststatus=2
 
-" Lets vim use 256 color scheme
-set t_Co=256
-
 " This enables the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 
