@@ -47,10 +47,17 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#406072
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#ADC4D1
-colorscheme neodark
-let g:neodark#solid_vertsplit = 1
-let g:neodark#terminal_transparent = 1
-let g:neodark#use_custom_terminal_theme = 1
+
+" These are the settings for one dark theme
+" let g:airline_theme='onedark'
+" let g:onedark_terminal_italics = 1
+" colorscheme onedark
+
+"These are the setting for deep space theme
+set background=dark
+colorscheme deep-space
+let g:deepspace_italics=1
+let g:airline_theme='deep_space'
 
 " This will highlight the current line
 nnoremap <leader>c :set cursorline!<cr>
