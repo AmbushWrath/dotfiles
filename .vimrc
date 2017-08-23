@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline'
 
 " For Git
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
 
 " For file search
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -37,9 +38,8 @@ Plugin 'tpope/vim-surround'
 
 " Just for looks plugins
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'lifepillar/vim-solarized8'
-Plugin 'tomasr/molokai'
-Plugin 'ajh17/spacegray.vim'
+Plugin 'tyrannicaltoucan/vim-deep-space'
+Plugin 'joshdick/onedark.vim'
 
 " For copy-paste ease
 Plugin 'christoomey/vim-system-copy'
@@ -59,8 +59,9 @@ Plugin 'svg.vim'
 " For better star search
 Plugin 'nelstrom/vim-visual-star-search'
 
-" For easy git browsing
-Plugin 'tpope/vim-unimpaired'
+" For Tmux compatablity
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'benmills/vimux'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

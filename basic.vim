@@ -27,15 +27,13 @@ set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" These are the specific filetype settings
 autocmd Filetype css setlocal noexpandtab
-autocmd Filetype python setlocal sts=2 ts=2 sw=2 expandtab
 
 " This is for trailing spaces
 set list
 set listchars=tab:▸\ ,trail:-
-
-" This is for the colorscheme
-" colorscheme spacegray
 
 " This opens the Gdiff window vertically
 set diffopt+=vertical
@@ -46,7 +44,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#406072
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#ADC4D1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#7070db
 
 " These are the settings for one dark theme
 " let g:airline_theme='onedark'
@@ -75,5 +73,12 @@ vnoremap ; :
 nnoremap <s-down> ddp
 nnoremap <s-up> ddk<s-p>
 
-" This is for underline instead of highlights
-:highlight Search ctermbg=black ctermfg=yellow cterm=underline
+" To retain a folding
+autocmd BufWinLeave *.* mkview!
+autocmd BufWinEnter *.* silent loadview
+
+" Folding settings for python
+autocmd Filetype python setlocal foldmethod=indent
+
+" This is for Graphic Vim
+set gfn=Source\ Code\ Pro\ for\ Powerline\ Light\ 13
