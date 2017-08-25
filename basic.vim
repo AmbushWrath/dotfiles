@@ -82,3 +82,9 @@ autocmd Filetype python setlocal foldmethod=indent
 
 " This is for Graphic Vim
 set gfn=Source\ Code\ Pro\ for\ Powerline\ Light\ 13
+
+" This is to set the syntax on
+syntax on
+
+" This is to make escape faster
+set timeoutlen=1000 ttimeoutlen=0
