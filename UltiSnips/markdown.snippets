@@ -1,14 +1,14 @@
 snippet back "Link to the content page!"
 
-[Back]( #Index )
+[Back]( #index )
 
 ---
 
 endsnippet
 
 snippet index "This will create an index element"
-[$1]( #${1/\s/_/g} )
-## <a id="${1/\s/_/g}"></a>$1
+[$1]( #${1/([A-Za-z0-9]+)|(\s+)|((?![A-Za-z0-9]+).)*/(?1:\L$0\E)(?2:-)(?3:)/g} )
+## <a id="${1/([A-Za-z0-9]+)|(\s+)|((?![A-Za-z0-9]+).)*/(?1:\L$0\E)(?2:-)(?3:)/g}"></a>$1
 endsnippet
 
 snippet wordm "For the word-meaning format"
