@@ -1,6 +1,6 @@
 snippet back "Link to the content page!"
 
-[Back][0]
+[Back]( #Index )
 
 ---
 
@@ -9,4 +9,23 @@ endsnippet
 snippet index "This will create an index element"
 [$1]( #${1/\s/_/g} )
 ## <a id="${1/\s/_/g}"></a>$1
+endsnippet
+
+snippet wordm "For the word-meaning format"
+### $1
+
+__Definition__:
+* $2
+
+__Example__:
+> $3
+
+__Synonyms__:
+* $4
+
+__Notes__:
+* $5
+
+---
+
 endsnippet

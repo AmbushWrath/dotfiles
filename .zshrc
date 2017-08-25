@@ -1,6 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.linuxbrew/bin:$HOME/.composer/vendor/bin
 
+# make CapsLock behave like Ctrl:
+setxkbmap -option ctrl:nocaps
+
+# make short-pressed Ctrl behave like Escape:
+xcape -t 50 -e 'Control_L=Escape'
+KEYTIMEOUT=1
+
 # Path to your oh-my-zsh installation.
   export ZSH=/home/sybox-orig/.oh-my-zsh
 
