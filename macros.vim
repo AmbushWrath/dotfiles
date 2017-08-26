@@ -24,7 +24,7 @@ let @i='bi_ea_'
 let @b='bi__wbea__'
 
 " Folding in Markdown file
-let @f='?###v/---$zf'
+let @f='?"card"vatzf'
 
 " This is for the mistakes that I do
 imap ZZ <Esc>

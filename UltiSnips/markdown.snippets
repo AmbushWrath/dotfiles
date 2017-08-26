@@ -12,7 +12,14 @@ snippet index "This will create an index element"
 endsnippet
 
 snippet wordm "For the word-meaning format"
+<div class="card">
+
+<div class="title">
+
 ### $1
+</div>
+
+<div class="body">
 
 __Definition__:
 * $2
@@ -21,11 +28,39 @@ __Example__:
 > $3
 
 __Synonyms__:
-* $4
+*$4*
 
 __Notes__:
 * $5
+</div>
+</div>
+endsnippet
 
----
-
+snippet cardcss "This is a general css template for card"
+<style>
+.markdown-body hr {
+    height: 1px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 40px;
+}
+.card .title {
+    padding: 20px 40px;
+    background: #03A9F4;
+    color: white;
+    text-align: center
+}
+.card .body {
+    padding: 20px 40px;
+}
+.card .body p strong{
+    color: #50057D
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+</style>
 endsnippet
