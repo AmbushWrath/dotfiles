@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.linuxbrew/bin:$HOME/.composer/
 setxkbmap -option ctrl:nocaps
 
 # make short-pressed Ctrl behave like Escape:
-xcape -t 50 -e 'Control_L=Escape'
+xcape -e 'Control_L=Escape'
 KEYTIMEOUT=1
 
 # Path to your oh-my-zsh installation.

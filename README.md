@@ -1,8 +1,8 @@
 # My Dotfiles
 
 ## <a id="index"></a>Index
-[Introduction]( #introduction )
-[What to do?]( #what-to-do )
+1. [Introduction]( #introduction )
+2. [What to do?]( #what-to-do )
 
 ## <a id="introduction"></a>Introduction
 These are all the configuration files that I generally use to set-up my workspace. These contain all the vim files, tmux config, zsh config, snippets, spelling files, and alias files. So, basically my whole setup.
