@@ -17,3 +17,6 @@ nmap <c-left> ;diffget //2;diffupdate
 vmap <c-left> ;diffget //2;diffupdate
 nmap <c-right> ;diffget //3;diffupdate
 vmap <c-right> ;diffget //3;diffupdate
+
+" This will auto delete the extra fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
