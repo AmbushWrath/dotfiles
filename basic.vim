@@ -88,3 +88,6 @@ syntax on
 
 " This is to make escape faster
 set timeoutlen=1000 ttimeoutlen=0
+
+" This is to stop markdown instant preview
+let g:instant_markdown_autostart = 0
