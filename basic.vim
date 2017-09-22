@@ -43,8 +43,8 @@ set termguicolors
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#406072
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#7070db
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#626977
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2E3543
 
 " These are the settings for one dark theme
 let g:airline_theme='onedark'

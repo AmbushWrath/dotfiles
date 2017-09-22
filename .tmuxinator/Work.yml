@@ -1,6 +1,6 @@
-# ~/.tmuxinator/Study.yml
+# ~/.tmuxinator/Work.yml
 
-name: Study
+name: Work
 root: ~/
 
 # Optional tmux socket
@@ -28,40 +28,26 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t Study
+# post: tmux -CC attach -t Work
 
-# windows:
-#   - editor:
-#       layout: main-vertical
-#       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-#       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-#       # synchronize: after
-#       panes:
-#         - vim
-#         - guard
-#   - server: bundle exec rails s
-#   - logs: tail -f log/development.log
 windows:
-    - English:
+    - Editor:
         layout: main-vertical
         panes:
-            - notes:
-                - cd Daily
-                - cd english
-                - vim notes.md
-    - Python notes:
+            - website:
+                - cd projects
+                - cd ecs
+                - vim resources/views/test.blade.php
+                - ;tabe
+                - ;e resources/assets/js/custom.js
+                - \v
+                - ;e resources/assets/js/components/Custom.vue
+                - ;tabe
+                - ;e resources/assets/sass/custom.scss
+    - Watch:
         layout: main-vertical
         panes:
-            - notes:
-                - cd Syvolt
-                - cd python
-                - vim notes.md
-    - Python code:
-        layout: main-vertical
-        panes:
-            - code:
-                - cd Syvolt
-                - cd python
-    - Cofiguration:
-        layout: main-vertical
-        panes:
+            - website:
+                - cd projects
+                - cd ecs
+                - npm run watch
