@@ -47,15 +47,15 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#626977
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2E3543
 
 " These are the settings for one dark theme
-let g:airline_theme='onedark'
-let g:onedark_terminal_italics = 1
-colorscheme onedark
+" let g:airline_theme='onedark'
+" let g:onedark_terminal_italics = 1
+" colorscheme onedark
 
 " These are the setting for deep space theme
-" set background=dark
-" colorscheme deep-space
-" let g:deepspace_italics=1
-" let g:airline_theme='deep_space'
+set background=dark
+colorscheme deep-space
+let g:deepspace_italics=1
+let g:airline_theme='deep_space'
 
 " This will highlight the current line
 nnoremap <leader>c :set cursorline!<cr>

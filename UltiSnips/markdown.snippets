@@ -6,6 +6,12 @@ snippet back "Link to the content page!"
 
 endsnippet
 
+snippet date "This will create an index element"
+
+[`date +%d-%m-%Y`]( #`date +%d-%m-%Y`)
+## <a id="`date +%d-%m-%Y`"></a>`date +%d-%m-%Y`
+endsnippet
+
 snippet index "This will create an index element"
 [$1]( #${1/([A-Za-z0-9]+)|(\s+)|((?![A-Za-z0-9]+).)*/(?1:\L$0\E)(?2:-)(?3:)/g} )
 ## <a id="${1/([A-Za-z0-9]+)|(\s+)|((?![A-Za-z0-9]+).)*/(?1:\L$0\E)(?2:-)(?3:)/g}"></a>$1

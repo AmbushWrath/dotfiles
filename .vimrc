@@ -46,6 +46,7 @@ Plugin 'christoomey/vim-system-copy'
 
 " For PHP
 Plugin 'stanangeloff/php.vim'
+Plugin 'jwalton512/vim-blade'
 
 " For Markdown
 Plugin 'suan/vim-instant-markdown'
@@ -65,6 +66,9 @@ Plugin 'benmills/vimux'
 
 " For Vue js support
 Plugin 'posva/vim-vue'
+
+" This is for better cursor integration
+Plugin 'jszakmeister/vim-togglecursor'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
