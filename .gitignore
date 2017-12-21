@@ -2,3 +2,4 @@
 .my-credentials
 /**/*.swp
 /**/tags
+*.log
