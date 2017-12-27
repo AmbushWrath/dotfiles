@@ -1,0 +1,25 @@
+snippet main "This is the main function"
+void main()
+{$1}
+endsnippet
+
+snippet po "Pointer variable"
+${1:Pointer} -> ${2:Member}
+endsnippet
+
+snippet print "Print function"
+printf( "${1:Format}", ${2:Variables} );
+endsnippet
+
+snippet assign "Assign memory to a node"
+${1:Struct}* ${2:Node Name} = ($1*) malloc(sizeof($1));
+endsnippet
+
+snippet strut "Structure"
+typedef struct ${1:Structure}
+{
+    $2;
+    struct $1 *next;
+    struct $1 *previous;
+} ${1/(([A-Za-z0-9]+).)*/(?1:\L$0\E)/g};
+endsnippet

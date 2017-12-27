@@ -18,3 +18,5 @@ nnoremap <leader>q :call IndentPHP()<cr>
 nmap <leader>py ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>
 nmap <leader>pi ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>;call VimuxZoomRunner()<CR>
 let g:syntastic_python_checkers=['python3']
+
+nmap <leader>cc ;w<CR>;call VimuxRunCommand("gcc " . bufname("%"))<CR>;call VimuxRunCommand("./a.out")<CR>

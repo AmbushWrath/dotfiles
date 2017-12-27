@@ -1,6 +1,6 @@
 # ~/.tmuxinator/Study.yml
 
-name: Study
+name: Python
 root: ~/
 
 # Optional tmux socket
@@ -42,18 +42,6 @@ root: ~/
 #   - server: bundle exec rails s
 #   - logs: tail -f log/development.log
 windows:
-    - English:
-        root: ~/Daily/english/
-        layout: main-vertical
-        panes:
-            - notes:
-                - vim notes.md
-    - Python notes:
-        root: ~/Syvolt/python/
-        layout: main-vertical
-        panes:
-            - notes:
-                - vim notes.md
     - Python code:
         root: ~/Syvolt/python/first/
         layout: main-vertical
