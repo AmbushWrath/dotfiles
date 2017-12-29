@@ -70,6 +70,9 @@ Plugin 'posva/vim-vue'
 " This is for better cursor integration
 Plugin 'jszakmeister/vim-togglecursor'
 
+" This is for Vimscript debugging
+Plugin 'junegunn/vader.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

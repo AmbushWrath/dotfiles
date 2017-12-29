@@ -7,8 +7,8 @@ snippet po "Pointer variable"
 ${1:Pointer} -> ${2:Member}
 endsnippet
 
-snippet print "Print function"
-printf( "${1:Format}", ${2:Variables} );
+snippet printf "Print function"
+printf("${1:%s}\n"${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}
 endsnippet
 
 snippet assign "Assign memory to a node"

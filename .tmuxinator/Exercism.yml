@@ -1,0 +1,10 @@
+name: Exer
+root: ~/exercism
+windows:
+  - Editor:
+      layout: main-vertical
+      panes:
+        - vim
+  - Config:
+      layout: main-vertical
+      panes:
