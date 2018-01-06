@@ -7,7 +7,7 @@ snippet po "Pointer variable"
 ${1:Pointer} -> ${2:Member}
 endsnippet
 
-snippet printf "Print function"
+snippet printf
 printf("${1:%s}\n"${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}
 endsnippet
 
