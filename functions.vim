@@ -6,12 +6,14 @@ nnoremap <leader>sn :UltiSnipsEdit<cr>
 
 " This is for easy indentation of html in php
 function! IndentPHP()
-    if ( &ft ==# 'php' )
-        set ft=html
-        normal gg=G
-        set ft=php
-        normal gg=G
-    endif
+  if ( &filetype ==# 'php' )
+    set filetype=html
+    ;1<CR>
+    normal =G
+    set filetype=php
+    ;1<CR>
+    normal =G
+  endif
 endfunc
 nnoremap <leader>q :call IndentPHP()<cr>
 

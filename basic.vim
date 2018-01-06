@@ -21,16 +21,6 @@ set wrap linebreak nolist
 " This will show the key pressed in the normal mode
 set showcmd
 
-" This code is for indentation and tab spacing.
-filetype indent on
-set softtabstop=4
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-" These are the specific filetype settings
-autocmd Filetype css setlocal noexpandtab
-
 " This is for trailing spaces
 set list
 set listchars=tab:▸\ ,trail:-
@@ -57,12 +47,6 @@ colorscheme deep-space
 let g:deepspace_italics=1
 let g:airline_theme='deep_space'
 
-" This will highlight the current line
-nnoremap <leader>c :set cursorline!<cr>
-
-" For mouse luxury
-set mouse=a
-
 " This is simple nnoremap
 nnoremap : ;
 nnoremap ; :
@@ -74,14 +58,13 @@ nnoremap <s-down> ddp
 nnoremap <s-up> ddk<s-p>
 
 " To retain a folding
-autocmd BufWinLeave *.* mkview!
-autocmd BufWinEnter *.* silent loadview
-
-" Folding settings for python
-autocmd Filetype python setlocal foldmethod=indent
+augroup viewgroup
+  autocmd BufWinLeave *.* mkview!
+  autocmd BufWinEnter *.* silent loadview
+augroup END
 
 " This is for Graphic Vim
-set gfn=Source\ Code\ Pro\ for\ Powerline\ Light\ 13
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 13
 
 " This is to set the syntax on
 syntax on
@@ -91,3 +74,9 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " This is to stop markdown instant preview
 let g:instant_markdown_autostart = 0
+
+" This will highlight the current line
+nnoremap <leader>c :set cursorline!<cr>
+
+" For mouse luxury
+set mouse=a
