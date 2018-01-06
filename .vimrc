@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " For better interface
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'vim-airline/vim-airline'
 
 " For Git
@@ -70,8 +71,18 @@ Plugin 'posva/vim-vue'
 " This is for better cursor integration
 Plugin 'jszakmeister/vim-togglecursor'
 
-" This is for Vimscript debugging
+" Javascript debugging
+Plugin 'flowtype/vim-flow'
+
+" This is more general way of testing
+Plugin 'janko-m/vim-test'
+
+" Testing for vimscript
 Plugin 'junegunn/vader.vim'
+
+" Style Guide for javascript and React
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,5 +107,6 @@ source ~/vim/airline.vim
 source ~/vim/functions.vim
 source ~/vim/UltiSnips.vim
 source ~/vim/fugitive.vim
-source ~/vim/basic.vim
 source ~/vim/movement.vim
+source ~/vim/flow.vim
+source ~/vim/basic.vim

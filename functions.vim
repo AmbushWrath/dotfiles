@@ -15,8 +15,16 @@ function! IndentPHP()
 endfunc
 nnoremap <leader>q :call IndentPHP()<cr>
 
+" For Python
 nmap <leader>py ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>
 nmap <leader>pi ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>;call VimuxZoomRunner()<CR>
-let g:syntastic_python_checkers=['python3']
 
+" For C
 nmap <leader>cc ;w<CR>;call VimuxRunCommand("gcc " . bufname("%"))<CR>;call VimuxRunCommand("./a.out")<CR>
+
+" For Vim
+nmap <leader>rv ;w<CR>;source %<CR>;wincmd l<CR>;Vader<CR>
+nmap <leader>ov ;e *.vim<CR>;vs<CR>;e *.vader<CR>;wincmd h<CR>
+
+" For JavaScript, ECMAScript
+nmap <leader>rj ;w<CR>;wincmd l<CR>;TestFile<CR>
