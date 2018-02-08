@@ -1,6 +1,6 @@
 # All I know about VIM( Vi IMproved )
 
-bold in itself is a very interesting concept.
+__Vim__ in itself is a very interesting concept.
 There are a lot of sources and tutorials that explain Vim much better than I ever can, but as I like writing and happen to be using Vim, I have decided to document things that I know about Vim.
 This is just an effort to complement my weak memory and simultaneously help people to understand why I configured my Vim this particular way.
 

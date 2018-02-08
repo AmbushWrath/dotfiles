@@ -10,6 +10,12 @@ let g:airline#extensions#tabline#enabled = 1
 " This shows just the file names
 let g:airline#extension#tabline#fnamemod = ':t'
 
+" Show buffer number over the name
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+" Show tabnumber in tabline
+let g:airline#extensions#tabline#show_tab_nr = 1
+
 " This enables powerline fonts for airline
 let g:airline_powerline_fonts = 1
 
@@ -31,11 +37,22 @@ set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
 " This is for ale setting
 let g:airline#extensions#ale#enabled = 1
+let g:ale_linters = {
+\   'javascript': ['eslint','flow'],
+\}
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'css': ['stylelint', 'remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['add_blank_lines_for_python_control_statements', 'autopep8', 'isort', 'yapf', 'remove_trailing_lines', 'trim_whitespace'],
 \}
-let g:ale_fix_on_save = 1
+
+" let g:ale_fix_on_save = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_completion_enabled = 1
 let g:test#strategy = 'vimux'
-" let g:ale_lint_on_save = 1
-" let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0

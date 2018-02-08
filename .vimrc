@@ -71,9 +71,6 @@ Plugin 'posva/vim-vue'
 " This is for better cursor integration
 Plugin 'jszakmeister/vim-togglecursor'
 
-" Javascript debugging
-Plugin 'flowtype/vim-flow'
-
 " This is more general way of testing
 Plugin 'janko-m/vim-test'
 
@@ -108,5 +105,4 @@ source ~/vim/functions.vim
 source ~/vim/UltiSnips.vim
 source ~/vim/fugitive.vim
 source ~/vim/movement.vim
-source ~/vim/flow.vim
 source ~/vim/basic.vim
