@@ -77,6 +77,9 @@ Plugin 'junegunn/vader.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
+" This is for table mode
+Plugin 'dhruvasagar/vim-table-mode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
