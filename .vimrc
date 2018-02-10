@@ -1,8 +1,10 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+if &compatible
+  set nocompatible
+endif
+filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -52,9 +54,6 @@ Plugin 'jwalton512/vim-blade'
 " For Markdown
 Plugin 'suan/vim-instant-markdown'
 
-" For tags
-Plugin 'taglist.vim'
-
 " For svg
 Plugin 'svg.vim'
 
@@ -64,9 +63,6 @@ Plugin 'nelstrom/vim-visual-star-search'
 " For Tmux compatablity
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'benmills/vimux'
-
-" For Vue js support
-Plugin 'posva/vim-vue'
 
 " This is for better cursor integration
 Plugin 'jszakmeister/vim-togglecursor'

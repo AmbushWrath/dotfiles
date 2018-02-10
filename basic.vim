@@ -1,6 +1,5 @@
-" This will contain all the basic vim settings
-
-" This is to turn on the spell checker on vim
+set encoding=utf-8
+scriptencoding=utf-8
 set spelllang=en
 nnoremap <leader>sp :set spell!<cr>
 
@@ -76,7 +75,7 @@ set timeoutlen=1000 ttimeoutlen=0
 let g:instant_markdown_autostart = 0
 
 " This will highlight the current line
-nnoremap <leader>c :set cursorline!<cr>
+nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
 
 " For mouse luxury
 set mouse=a

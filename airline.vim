@@ -1,3 +1,4 @@
+scriptencoding=utf-8
 " This file contians all the settings relative to airline
 " Airline is a plugin that will show a better UI interface for the status line
 
@@ -18,6 +19,10 @@ let g:airline#extensions#tabline#show_tab_nr = 1
 
 " This enables powerline fonts for airline
 let g:airline_powerline_fonts = 1
+
+" This is for cool airline separators
+let g:airline_left_sep = ' '
+let g:airline_right_sep = ' '
 
 " This is to enable the fugitive on the status line
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
