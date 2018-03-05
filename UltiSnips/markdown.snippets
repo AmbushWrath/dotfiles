@@ -1,5 +1,13 @@
+snippet image "This is to include an image"
+![$1](${VISUAL}?raw=true "${2:$1}")
+endsnippet
+
 snippet link "This is for links"
 [$1](${VISUAL})
+endsnippet
+
+snippet hidden "This is for hidden links"
+[${VISUAL}]: #${VISUAL/([A-Za-z0-9]+)|(\s+)|((?![A-Za-z0-9]+).)*/(?1:\L$0\E)(?2:-)(?3:)/g}
 endsnippet
 
 snippet bold "This is for bold texts"
