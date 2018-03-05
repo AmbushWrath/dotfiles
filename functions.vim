@@ -30,3 +30,17 @@ nmap <leader>cc ;w<CR>;call VimuxRunCommand("gcc " . bufname("%"))<CR>;call Vimu
 " For Vim
 nmap <leader>rv ;w<CR>;source %<CR>;wincmd l<CR>;TestFile<CR>
 nmap <leader>ov ;e *.vim<CR>;vs<CR>;e *.vader<CR>;wincmd h<CR>
+
+" This is a function to move through files easily
+function InitiateProject()
+  set path+=$PWD/**
+
+endfunction
+nnoremap <leader>gp :call InitiateProject()<CR>
+
+" This function gets all the modified files between 2 commits
+function GetChanges(count)
+  cexpr system("git diff --name-only HEAD HEAD~" . a:count . " \| awk -F '/' '{print $NF}'") | copen
+
+endfunction
+nnoremap <leader>gc :call GetChanges(1)<CR>

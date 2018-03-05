@@ -9,7 +9,7 @@
 nnoremap <Space> @@
 
 " The Ordered list macro
-let @p='^yf jP^'
+let @p='k0vt.yj0Pa. '
 
 " The Unordered list macro
 let @l='^yf jP^'

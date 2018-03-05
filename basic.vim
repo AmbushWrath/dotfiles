@@ -1,3 +1,4 @@
+set ff=unix
 set encoding=utf-8
 scriptencoding=utf-8
 set spelllang=en
@@ -30,10 +31,10 @@ set diffopt+=vertical
 " This is for better color scheme and indentation
 set termguicolors
 let g:indent_guides_guide_size = 1
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#626977
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2E3543
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_auto_colors = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#626977
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2E3543
 
 " These are the settings for one dark theme
 " let g:airline_theme='onedark'
@@ -57,10 +58,10 @@ nnoremap <s-down> ddp
 nnoremap <s-up> ddk<s-p>
 
 " To retain a folding
-augroup viewgroup
-  autocmd BufWinLeave *.* mkview!
-  autocmd BufWinEnter *.* silent loadview
-augroup END
+" augroup viewgroup
+"   autocmd BufWinLeave *.* mkview!
+"   autocmd BufWinEnter *.* silent loadview
+" augroup END
 
 " This is for Graphic Vim
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 13
@@ -76,6 +77,7 @@ let g:instant_markdown_autostart = 0
 
 " This will highlight the current line
 nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
+set cursorline cursorcolumn
 
-" For mouse luxury
-set mouse=a
+
+au BufRead,BufNewFile *.tmpl set filetype=jinja
