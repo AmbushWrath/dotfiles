@@ -10,3 +10,4 @@ alias cku='git checkout -b'
 alias gl='git log'
 alias glu='git log --pretty=format:"%h %s" --graph'
 alias mux="tmuxinator"
+alias work='cd shared/my_scripts/notes/md/Prodapt/'

@@ -15,8 +15,7 @@ set relativenumber
 " This is for coloring the 81'st and 121'st column in vim to give an idea of a
 " soft line break
 set colorcolumn=81,121
-set textwidth=0
-set wrap linebreak nolist
+set textwidth=80
 
 " This will show the key pressed in the normal mode
 set showcmd
