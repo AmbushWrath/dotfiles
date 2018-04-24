@@ -44,3 +44,5 @@ function GetChanges(count)
 
 endfunction
 nnoremap <leader>gc :call GetChanges(1)<CR>
+
+nnoremap <leader>= :ALEFix<CR>

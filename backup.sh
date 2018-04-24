@@ -1,7 +1,6 @@
 cp ~/.vimrc ~/vim/.vimrc
 cp ~/.tmux.conf ~/vim/.tmux.conf
-cp ~/.zshrc ~/vim/.zshrc
+cp ~/.vim/bundle/ultisnips/UltiSnips/* ~/vim/UltiSnips/
+cp ~/.config/tmuxinator/* ~/vim/.tmuxinator/
+cp ~/.vim/after/ftplugin/* ~/vim/ftplugin/
 cp ~/backup.sh ~/vim/backup.sh
-cp -rf ~/.vim/bundle/ultisnips/UltiSnips ~/vim/
-cp -rf ~/.tmuxinator/ ~/vim/
-cp -rf ~/.vim/ftplugin ~/vim/

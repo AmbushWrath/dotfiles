@@ -26,5 +26,8 @@ let @b='bi__wbea__'
 " Folding in Markdown file
 let @f='?"card"vatzf'
 
+" Folding a page in Markdown file
+let @g='?##v/---zf'
+
 " This is for the mistakes that I do
 imap ZZ <Esc>

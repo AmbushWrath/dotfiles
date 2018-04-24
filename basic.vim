@@ -1,4 +1,3 @@
-set ff=unix
 set encoding=utf-8
 scriptencoding=utf-8
 set spelllang=en
@@ -41,10 +40,13 @@ let g:indent_guides_auto_colors = 1
 " colorscheme onedark
 
 " These are the setting for deep space theme
-set background=dark
-colorscheme deep-space
-let g:deepspace_italics=1
-let g:airline_theme='deep_space'
+colorscheme gotham
+let g:AirlineTheme='gotham'
+" let g:gotham_airline_emphasised_insert = 0
+" set background=dark
+" colorscheme deep-space
+" let g:deepspace_italics=1
+" let g:airline_theme='deep_space'
 
 " This is simple nnoremap
 nnoremap : ;
@@ -57,10 +59,11 @@ nnoremap <s-down> ddp
 nnoremap <s-up> ddk<s-p>
 
 " To retain a folding
-" augroup viewgroup
+augroup viewgroup
 "   autocmd BufWinLeave *.* mkview!
-"   autocmd BufWinEnter *.* silent loadview
-" augroup END
+  autocmd BufWinEnter *.* silent loadview
+augroup END
+
 
 " This is for Graphic Vim
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 13

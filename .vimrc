@@ -48,11 +48,14 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'christoomey/vim-system-copy'
 
 " For PHP
-Plugin 'stanangeloff/php.vim'
-Plugin 'jwalton512/vim-blade'
+" Plugin 'stanangeloff/php.vim'
+" Plugin 'jwalton512/vim-blade'
 
 " For Markdown
 Plugin 'suan/vim-instant-markdown'
+
+" For tags
+" Plugin 'taglist.vim'
 
 " For svg
 Plugin 'svg.vim'
@@ -79,6 +82,9 @@ Plugin 'mxw/vim-jsx'
 
 " This is for table mode
 Plugin 'dhruvasagar/vim-table-mode'
+
+" Batman theme
+Plugin 'whatyouhide/vim-gotham'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

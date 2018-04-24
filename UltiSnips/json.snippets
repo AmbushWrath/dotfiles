@@ -1,0 +1,35 @@
+snippet json "This is a basic json template"
+{
+    "endpoint": "null",
+    "type": "bpprov.runners.simple.Sequence",
+    "tests": [],
+    "endpoint-parameters": {},
+    "out-path": [],
+    "in-path": [
+        {
+            "type": "bpprov.translators.aggregator.Call",
+            "parameters": {
+                "command": "${1:Basic files to be called}",
+                "output": {
+                    "patches": [
+                        {
+                            "from": "/data",
+                            "to": "/data/${2:Required output variable}"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "bpprov.translators.call.Function",
+            "description": "${3:This is the function description}",
+            "parameters": {
+                "function": "racisconet.command_utils.${4:Function Name}",
+                "args": {
+                    "${5:Extra Parameters}":"${6:Parameter Values}"
+                }
+            }
+        }
+    ]
+}
+endsnippet
