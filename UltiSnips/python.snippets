@@ -1,3 +1,7 @@
+snippet #! "Hash-Bang"
+#!`which python3`
+endsnippet
+
 snippet pt "Easy printing"
 print( $1, end='\n' )
 endsnippet
@@ -8,6 +12,10 @@ endsnippet
 
 snippet br "Breakpoint"
 ipdb.set_trace()
+endsnippet
+
+snippet pr "Printing Text"
+print("${1:%s}"${1/([^\{]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}
 endsnippet
 
 snippet code "Python General Code"

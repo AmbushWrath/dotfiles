@@ -50,6 +50,8 @@ let g:ale_fixers = {
 \   'css': ['stylelint', 'remove_trailing_lines', 'trim_whitespace'],
 \   'python': ['add_blank_lines_for_python_control_statements', 'autopep8', 'isort', 'yapf', 'remove_trailing_lines', 'trim_whitespace'],
 \   'json': ['jq', 'prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\   'html': ['remove_trailing_lines', 'trim_whitespace'],
+\   'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace']
 \}
 
 " let g:ale_fix_on_save = 1

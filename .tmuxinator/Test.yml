@@ -1,0 +1,13 @@
+# ~/.tmuxinator/Test.yml
+
+name: Test
+root: ~/shared/my_scripts/test
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - editor:
+            source ~/shared/dev2/bin/activate
+        - run:
+            source ~/shared/dev2/bin/activate

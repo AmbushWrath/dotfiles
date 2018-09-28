@@ -1,0 +1,13 @@
+# ~/.tmuxinator/Flask.yml
+
+name: Flask
+root: ~/shared/my_scripts/notes/Kailash/UI-Portal_2/
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim:
+            - . ~/shared/dev3/bin/activate
+            - vim
+  - server:
+    - make SO_IP='192.168.25.13:9090' dev

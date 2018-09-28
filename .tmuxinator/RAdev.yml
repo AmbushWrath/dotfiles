@@ -1,0 +1,11 @@
+# ~/.tmuxinator/RAdev.yml
+
+name: RAdev
+root: ~/shared/bp-ra-juniper-ws/
+windows:
+  - Editor:
+      layout: main-vertical
+      panes:
+        - vim
+  - Ra:
+  - Config:

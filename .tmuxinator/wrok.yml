@@ -1,6 +1,6 @@
-# ~/.tmuxinator/work.yml
+# ~/.tmuxinator/wrok.yml
 
-name: work
+name: wrok
 root: ~/
 
 # Optional tmux socket
@@ -40,7 +40,7 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t work
+# post: tmux -CC attach -t wrok
 
 windows:
   - editor:

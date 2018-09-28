@@ -1,0 +1,14 @@
+# ~/.tmuxinator/Node.yml
+
+name: Node
+root: ~/new_project/react-app/
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+  - watch: npm run dev
+  - server:
+    - . env/bin/activate
+    - python main.py

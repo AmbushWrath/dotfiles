@@ -1,6 +1,6 @@
-# ~/.tmuxinator/work.yml
+# ~/.tmuxinator/study.yml
 
-name: work
+name: study
 root: ~/
 
 # Optional tmux socket
@@ -40,7 +40,7 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t work
+# post: tmux -CC attach -t study
 
 windows:
   - editor:

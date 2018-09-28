@@ -1,0 +1,13 @@
+snippet py "Make string into jinja code"
+{% ${VISUAL} %}
+endsnippet
+
+snippet fe "Make form element"
+<div class="form-group">
+  ${VISUAL}
+</div>
+endsnippet
+
+snippet stat "Change link to static file"
+<script src="{{url_for('static', filename='${VISUAL}')}}"></script>
+endsnippet

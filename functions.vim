@@ -18,8 +18,8 @@ endfunc
 nnoremap <leader>q :call IndentPHP()<cr>
 
 " For Python
-nmap <leader>py ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>
-nmap <leader>pi ;w<CR>;call VimuxRunCommand("python3 " . bufname("%"))<CR>;call VimuxZoomRunner()<CR>
+nmap <leader>py ;w<CR>;call VimuxRunCommand("python " . bufname("%"))<CR>
+nmap <leader>pi ;w<CR>;call VimuxRunCommand("python " . bufname("%"))<CR>;call VimuxZoomRunner()<CR>
 
 " To run the testfile
 nmap <leader>rt ;w<CR>;wincmd l<CR>;TestFile<CR>
@@ -43,6 +43,10 @@ function GetChanges(count)
   cexpr system("git diff --name-only HEAD HEAD~" . a:count . " \| awk -F '/' '{print $NF}'") | copen
 
 endfunction
+
 nnoremap <leader>gc :call GetChanges(1)<CR>
 
 nnoremap <leader>= :ALEFix<CR>
+
+" For ansible
+nmap <leader>ac ;w<CR>;call VimuxRunCommand("ansible-playbook " . bufname("%"))<CR>

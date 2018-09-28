@@ -1,10 +1,8 @@
-if &compatible
-  set nocompatible
-endif
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set runtimepath+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -24,6 +22,7 @@ Plugin 'tpope/vim-unimpaired'
 " For file search
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " For motion
 Plugin 'easymotion/vim-easymotion'
@@ -39,26 +38,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 
-" Just for looks plugins
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tyrannicaltoucan/vim-deep-space'
-Plugin 'joshdick/onedark.vim'
-
 " For copy-paste ease
 Plugin 'christoomey/vim-system-copy'
-
-" For PHP
-" Plugin 'stanangeloff/php.vim'
-" Plugin 'jwalton512/vim-blade'
-
-" For Markdown
-Plugin 'suan/vim-instant-markdown'
-
-" For tags
-" Plugin 'taglist.vim'
-
-" For svg
-Plugin 'svg.vim'
 
 " For better star search
 Plugin 'nelstrom/vim-visual-star-search'
@@ -72,16 +53,7 @@ Plugin 'jszakmeister/vim-togglecursor'
 
 " This is more general way of testing
 Plugin 'janko-m/vim-test'
-
-" Testing for vimscript
-Plugin 'junegunn/vader.vim'
-
-" Style Guide for javascript and React
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-
-" This is for table mode
-Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'thaerkh/vim-workspace'
 
 " Batman theme
 Plugin 'whatyouhide/vim-gotham'

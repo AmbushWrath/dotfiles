@@ -1,0 +1,21 @@
+# ~/.tmuxinator/Ansible.yml
+
+name: Ansible
+root: ~/shared/server
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim:
+          - . ../dev2/bin/activate
+        - server:
+          - . ../server2/bin/activate
+  - server:
+      layout: main-horizontal
+      panes:
+        - server:
+          - . ../server2/bin/activate
+          - cd code
+          - export FLASK_APP=app.py
+          - export FLASK_DEBUG=1
+          - flask run --host '0.0.0.0'

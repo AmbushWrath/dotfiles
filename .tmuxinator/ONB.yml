@@ -1,0 +1,17 @@
+# ~/.tmuxinator/ONB.yml
+
+name: ONB
+root: ~/shared/my_scripts/
+
+windows:
+  - Onboard:
+      layout: main-horizontal
+      panes:
+        - Core:
+          - sh s_bpocore.sh
+        - UI:
+          - sleep 1m
+          - sh s_orcui.sh
+        - Orchestrate:
+          - sleep 1m
+          - sh orch.sh

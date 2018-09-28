@@ -1,23 +1,13 @@
+# ~/.tmuxinator/Work.yml
+
 name: Work
-root: ~/
+root: ~/shared/server
 windows:
-    - Editor:
-        layout: main-vertical
-        panes:
-            - website:
-                - cd projects
-                - cd ecs
-                - vim resources/views/test.blade.php
-                - ;tabe
-                - ;e resources/assets/js/custom.js
-                - \v
-                - ;e resources/assets/js/components/Custom.vue
-                - ;tabe
-                - ;e resources/assets/sass/custom.scss
-    - Watch:
-        layout: main-vertical
-        panes:
-            - website:
-                - cd projects
-                - cd ecs
-                - npm run watch
+  - editor:
+      layout: main-horizontal
+      panes:
+        - editor:
+          - source ../dev2/bin/activate
+
+        - ansible:
+          - source ../server2/bin/activate
