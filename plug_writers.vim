@@ -26,5 +26,3 @@ autocmd FileType markdown,mkd,text,rst call Prose()
 
 " invoke manually by command for other file types
 command! -nargs=0 Prose call Prose()
-
-let g:languagetool_jar='/snap/languagetool/current'
