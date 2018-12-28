@@ -9,9 +9,6 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 
-" Themes
-Plug 'morhetz/gruvbox'
-
 " For Better View
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
@@ -45,9 +42,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 
 " Style Guide for javascript and React
-Plug 'pangloss/vim-javascript', {'for': 'javascript.jsx'}
-Plug 'mxw/vim-jsx', {'for': 'javascript.jsx'}
-Plug 'chemzqm/vim-jsx-improve', {'for': 'javascript.jsx'}
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'mxw/vim-jsx', {'for': 'javascript'}
+Plug 'chemzqm/vim-jsx-improve', {'for': 'javascript'}
 
 " Json Plugins
 Plug 'elzr/vim-json', {'for': 'json'}
@@ -55,9 +52,12 @@ Plug 'elzr/vim-json', {'for': 'json'}
 " Running Tests
 Plug 'janko-m/vim-test'
 
+" Themes
+Plug 'morhetz/gruvbox', {'on':  'NERDTreeToggle', 'for': ['css', 'html', 'vim', 'yaml', 'python','javascript']}
+
 " This is for table mode
 Plug 'dhruvasagar/vim-table-mode', {'for': 'markdown'}
-Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-user', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-textobj-quote', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-textobj-sentence', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-litecorrect', {'for': ['text', 'markdown']}
@@ -65,6 +65,7 @@ Plug 'reedes/vim-wordy', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-pencil', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-lexical', {'for': ['text', 'markdown']}
 Plug 'dbmrq/vim-ditto', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-colors-pencil', {'for': ['text', 'markdown']}
 
 call plug#end()
 
