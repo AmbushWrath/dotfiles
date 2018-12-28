@@ -1,0 +1,11 @@
+{
+   "libs": [
+     "browser",
+     "react",
+     "lodash"
+   ],
+   "plugins": {
+       "doc_comment": null,
+       "node": {}
+   }
+ }

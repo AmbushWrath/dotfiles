@@ -1,107 +1,84 @@
-if &compatible
-  set nocompatible
-endif
-filetype off
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Code Completion
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --ts-completer' }
+Plug 'SirVer/ultisnips'
+Plug 'ervandew/supertab'
 
-" Let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Navigation
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 
-" For better interface
-" Plugin 'vim-syntastic/syntastic'
-Plugin 'w0rp/ale'
-Plugin 'vim-airline/vim-airline'
+" Themes
+Plug 'morhetz/gruvbox'
+
+" For Better View
+Plug 'w0rp/ale'
+Plug 'vim-airline/vim-airline'
 
 " For Git
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
 
 " For file search
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " For motion
-Plugin 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
 " For code completion
-Plugin 'ervandew/supertab'
-Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-Plugin 'SirVer/ultisnips'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
 
 " For surround support
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-
-" Just for looks plugins
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tyrannicaltoucan/vim-deep-space'
-Plugin 'joshdick/onedark.vim'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 
 " For copy-paste ease
-Plugin 'christoomey/vim-system-copy'
-
-" For PHP
-Plugin 'stanangeloff/php.vim'
-Plugin 'jwalton512/vim-blade'
-
-" For Markdown
-Plugin 'suan/vim-instant-markdown'
-
-" For svg
-Plugin 'svg.vim'
+Plug 'christoomey/vim-system-copy'
 
 " For better star search
-Plugin 'nelstrom/vim-visual-star-search'
+Plug 'nelstrom/vim-visual-star-search'
 
 " For Tmux compatablity
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'benmills/vimux'
-
-" This is for better cursor integration
-Plugin 'jszakmeister/vim-togglecursor'
-
-" This is more general way of testing
-Plugin 'janko-m/vim-test'
-
-" Testing for vimscript
-Plugin 'junegunn/vader.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
 
 " Style Guide for javascript and React
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript', {'for': 'javascript.jsx'}
+Plug 'mxw/vim-jsx', {'for': 'javascript.jsx'}
+Plug 'chemzqm/vim-jsx-improve', {'for': 'javascript.jsx'}
+
+" Json Plugins
+Plug 'elzr/vim-json', {'for': 'json'}
+
+" Running Tests
+Plug 'janko-m/vim-test'
 
 " This is for table mode
-Plugin 'dhruvasagar/vim-table-mode'
+Plug 'dhruvasagar/vim-table-mode', {'for': 'markdown'}
+Plug 'kana/vim-textobj-user'
+Plug 'reedes/vim-textobj-quote', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-textobj-sentence', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-litecorrect', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-wordy', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-pencil', {'for': ['text', 'markdown']}
+Plug 'reedes/vim-lexical', {'for': ['text', 'markdown']}
+Plug 'dbmrq/vim-ditto', {'for': ['text', 'markdown']}
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#end()
 
-" All the other customization are in vim folder
-source ~/vim/bufferment.vim
+source ~/vim/theme.vim
+source ~/vim/leader.vim
+source ~/vim/common.vim
 source ~/vim/macros.vim
-source ~/vim/routing.vim
-source ~/vim/airline.vim
-source ~/vim/functions.vim
-source ~/vim/UltiSnips.vim
-source ~/vim/fugitive.vim
-source ~/vim/movement.vim
-source ~/vim/basic.vim
+
+" Plugin based file
+source ~/vim/plug_nerdtree.vim
+source ~/vim/plug_airline.vim
+source ~/vim/plug_emmet.vim
+source ~/vim/plug_ultisnips.vim
+source ~/vim/plug_ale.vim
+source ~/vim/plug_indent_guide.vim
+source ~/vim/plug_vim_test.vim
+source ~/vim/plug_writers.vim
