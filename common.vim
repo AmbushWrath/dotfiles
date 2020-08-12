@@ -25,8 +25,6 @@ nnoremap ; :
 vnoremap : ;
 vnoremap ; :
 
-set cursorline cursorcolumn
-
 " This will auto delete the extra fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
@@ -48,3 +46,17 @@ augroup viewgroup
   " autocmd BufWinLeave *.* mkview!
   autocmd BufWinEnter *.* silent loadview
 augroup END
+
+set mouse=a
+
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  " Uncomment to have 'bomb' on by default for new files.
+  " Note, this will not apply to the first, empty buffer created at Vim startup.
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif

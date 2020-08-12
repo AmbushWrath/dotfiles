@@ -1,0 +1,4 @@
+source ~/.sybox-config/.alias
+source ~/.sybox-config/.key
+source ~/.sybox-config/.path
+source ~/.sybox-config/.vars

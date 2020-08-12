@@ -6,8 +6,6 @@
 " $    $ $    $  $$$$  $    $  $$$$   $$$$
 " This file contains the most used macros, for me.
 " Macros
-let mapleader=' '
-nnoremap \ @@
 
 " The Ordered list macro
 let @p='^yf jP^'

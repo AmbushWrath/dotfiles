@@ -9,5 +9,5 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " This statement requires double quotes
-let g:UltiSnipsSnippetsDir = "~/.vim/plugged/ultisnips/UltiSnips"
+let g:UltiSnipsSnippetsDir = "~/vim/UltiSnips"
 let g:UltiSnipsEditSplit='vertical'

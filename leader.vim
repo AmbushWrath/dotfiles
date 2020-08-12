@@ -99,4 +99,3 @@ nnoremap <s-up> ddk<s-p>
 nnoremap <leader>= :ALEFix<CR>
 nnoremap <leader>g ;Gstatus<CR>
 nnoremap <leader>o ;only<CR>
-

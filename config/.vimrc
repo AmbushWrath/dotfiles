@@ -12,6 +12,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':  'NERDTreeToggle' }
 " For Better View
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " For Git
 Plug 'tpope/vim-fugitive'
@@ -42,9 +43,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 
 " Style Guide for javascript and React
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}
-Plug 'mxw/vim-jsx', {'for': 'javascript'}
-Plug 'chemzqm/vim-jsx-improve', {'for': 'javascript'}
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'chemzqm/vim-jsx-improve'
 
 " Json Plugins
 Plug 'elzr/vim-json', {'for': 'json'}
@@ -53,19 +54,22 @@ Plug 'elzr/vim-json', {'for': 'json'}
 Plug 'janko-m/vim-test'
 
 " Themes
-Plug 'morhetz/gruvbox', {'on':  'NERDTreeToggle', 'for': ['css', 'html', 'vim', 'yaml', 'python','javascript']}
+Plug 'morhetz/gruvbox'
+Plug 'fneu/breezy'
+Plug 'ryanoasis/vim-devicons'
 
 " This is for table mode
 Plug 'dhruvasagar/vim-table-mode', {'for': 'markdown'}
-Plug 'kana/vim-textobj-user', {'for': ['text', 'markdown']}
-Plug 'reedes/vim-textobj-quote', {'for': ['text', 'markdown']}
-Plug 'reedes/vim-textobj-sentence', {'for': ['text', 'markdown']}
-Plug 'reedes/vim-litecorrect', {'for': ['text', 'markdown']}
-Plug 'reedes/vim-wordy', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-pencil', {'for': ['text', 'markdown']}
-Plug 'reedes/vim-lexical', {'for': ['text', 'markdown']}
-Plug 'dbmrq/vim-ditto', {'for': ['text', 'markdown']}
 Plug 'reedes/vim-colors-pencil', {'for': ['text', 'markdown']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" TypeScript Plugins
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+
+" Experimental
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
@@ -76,6 +80,9 @@ source ~/vim/macros.vim
 
 " Plugin based file
 source ~/vim/plug_nerdtree.vim
+source ~/vim/plug_ycm.vim
+source ~/vim/plug_vimspector.vim
+source ~/vim/plug_ctrlp.vim
 source ~/vim/plug_airline.vim
 source ~/vim/plug_emmet.vim
 source ~/vim/plug_ultisnips.vim
